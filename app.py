@@ -68,7 +68,7 @@ def main():
     st.title("🎉🎂🎁 Birthday Magic 🎁🎂🎉")
     st.write("Welcome to the Birthday Magic! Let's make your special day even more magical! 🎉🎂🎁")
     birthday_wish()
-    st.write("Now, let's check the plans for today! 🗓️")
+    #st.write("Now, let's check the plans for today! 🗓️")
     check_plans()
        
         
