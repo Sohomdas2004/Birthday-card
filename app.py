@@ -10,6 +10,7 @@ def birthday_wish():
     while bool1:
         st.write("🎉🎂🎁")
         st.balloons()
+        st.snow()
         st.success("Let's celebrate your special day! 🎉🎂🎁")
         st.markdown("<h1 style='text-align: center; color: pink;'>Happy Birthday! 🎉🎂🎁</h1>", unsafe_allow_html=True)
         st.write("""
@@ -33,13 +34,13 @@ def check_plans():
             st.header("Tamluk")
             st.write("See you at the temple at 10:00 AM")
             st.image("https://thumbs.dreamstime.com/b/bargabhima-temple-courtyard-golden-domes-devotees-tamluk-west-bengal-india-medinipur-august-view-historic-398908606.jpg", 
-                     width=300)
+                     )
                     
         with col2:
             st.header("Haldia")
             st.write("After the temple visit, we will go to Haldia")
             st.image("https://i.ytimg.com/vi/sioPVFIqyJ0/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGDwgZSgsMA8=&rs=AOn4CLDkOqYYfLCTYvHtCRIZgPI1YBClqQ", 
-                     width=400)
+                     )
         st.data_editor(
                 data={
                     "Time": ["10:00 AM",  "1:00 PM", "02:00 PM", "05:00 PM"],
