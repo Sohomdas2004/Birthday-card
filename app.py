@@ -167,7 +167,7 @@ def reasons():
             unsafe_allow_html=True
             )
             
-            time.sleep(0.4)  #
+            time.sleep(0.5)  
 
         st.markdown("---")
         reason_placeholder.markdown(
@@ -206,7 +206,7 @@ def check_plans():
         #Staring the 2nd while loop to check the plans for today
     while bool2:
         st.markdown("<h3 style='text-align: center; color: pink;'>Tamluk</h3>", unsafe_allow_html=True)
-        st.write("See you at the temple at 10:00 AM")
+        st.write("See you at the temple at 08:00 AM")
         st.image("https://thumbs.dreamstime.com/b/bargabhima-temple-courtyard-golden-domes-devotees-tamluk-west-bengal-india-medinipur-august-view-historic-398908606.jpg", 
                  caption="Bargabhima Temple, Tamluk")
                 
