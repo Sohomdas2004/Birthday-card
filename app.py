@@ -31,13 +31,13 @@ def check_plans():
     while bool2:
         col1, col2 = st.columns(2)
         with col1:
-            st.header("Tamluk")
+            st.markdown("<h3 style='text-align: center; color: pink;'>Tamluk</h3>", unsafe_allow_html=True)
             st.write("See you at the temple at 10:00 AM")
             st.image("https://thumbs.dreamstime.com/b/bargabhima-temple-courtyard-golden-domes-devotees-tamluk-west-bengal-india-medinipur-august-view-historic-398908606.jpg", 
                      )
                     
         with col2:
-            st.header("Haldia")
+            st.markdown("<h3 style='text-align: center; color: pink;'>Haldia</h3>", unsafe_allow_html=True)
             st.write("After the temple visit, we will go to Haldia")
             st.image("https://i.ytimg.com/vi/sioPVFIqyJ0/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGDwgZSgsMA8=&rs=AOn4CLDkOqYYfLCTYvHtCRIZgPI1YBClqQ", 
                      )
