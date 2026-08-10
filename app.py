@@ -190,7 +190,7 @@ def reasons():
 
         st.markdown("---")
         
-        st.markdown("<h3 style='text-align: center; color: pink;'>Heyy cutie. ❤️ I don't need 1000 reasons to need you. I just need one—you make my world a little happier by standing by me. 🎉🎂🎁</h3>", unsafe_allow_html=True)
+        st.markdown("<h3 style='text-align: center; color: pink;'>But cutie. ❤️ I don't need 1000 reasons to need you. I just need one—you make my world a little happier by standing by me. 🎉🎂🎁</h3>", unsafe_allow_html=True)
 
     
 
