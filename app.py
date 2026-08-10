@@ -38,71 +38,36 @@ def message():
                 **Happy Birthday, beautiful! 🎂💖**
 
                 """)
-    st.markdown("<h1 style='text-align: center; color: baby pink;'>As this little birthday card comes to an end, I just want to say one thing—I am truly grateful that someone as wonderful as you exists in my life. ❤️</h1>", unsafe_allow_html=True)
-    st.markdown("<h1 style='text-align: center; color: pink;'>Happy Birthday! 🎂💫You deserve all the happiness in the world. ❤️</h1>", unsafe_allow_html=True)
+    # st.markdown("<h1 style='text-align: center; color: baby pink;'>As this little birthday card comes to an end, I just want to say one thing—I am truly grateful that someone as wonderful as you exists in my life. ❤️</h1>", unsafe_allow_html=True)
+    # st.markdown("<h1 style='text-align: center; color: pink;'>Happy Birthday! 🎂💫You deserve all the happiness in the world. ❤️</h1>", unsafe_allow_html=True)
     
-
-def check_plans():
-    bool2=False
-    check=st.button("Let's Check today plans")
-    if check:
-        bool2=True
-        
-        #Staring the 2nd while loop to check the plans for today
-    while bool2:
-        col1, col2 = st.columns(2)
-        with col1:
-            st.markdown("<h3 style='text-align: center; color: pink;'>Tamluk</h3>", unsafe_allow_html=True)
-            st.write("See you at the temple at 10:00 AM")
-            st.image("https://thumbs.dreamstime.com/b/bargabhima-temple-courtyard-golden-domes-devotees-tamluk-west-bengal-india-medinipur-august-view-historic-398908606.jpg", 
-                     )
-                    
-        with col2:
-            st.markdown("<h3 style='text-align: center; color: pink;'>Haldia</h3>", unsafe_allow_html=True)
-            st.write("After the temple visit")
-            st.image("https://i.ytimg.com/vi/sioPVFIqyJ0/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGDwgZSgsMA8=&rs=AOn4CLDkOqYYfLCTYvHtCRIZgPI1YBClqQ", 
-                     )
-        st.data_editor(
-                data={
-                    "Time": ["10:00 AM",  "1:00 PM", "02:00 PM", "05:00 PM"],
-                    "Activity": ["Temple Visit",  "Lunch at The Temple", "Haldia Township", "Return Home"]
-                },
-                column_config={
-                    "Time": st.column_config.TextColumn("Time"),
-                    "Activity": st.column_config.TextColumn("Activity")
-                },
-                hide_index=True,
-                key="plans"
-            )
-
-        message()
-            
-        bool2=False
         
 def reasons():
     with st.expander("💗 1000 Reasons I Need You"):
+        
         reasons = [
+        "Your little reactions",
+        "Your random texts",
+        "Your silly jokes",
+        "Your honesty",
+        "Your weirdness",
+        "Your kindness",
+        "Your curiosity",
         "Your smile",
         "Your laugh",
         "Your beautiful eyes",
         "Your voice",
-         "Your little reactions",
-        "Your random texts",
         "Your good-morning messages",
         "Your good-night messages",
         "Your hugs",
         "Your presence",
-        "Your kindness",
         "Your patience",
-        "Your silly jokes",
         "Your adorable anger",
         "Your sleepy voice",
         "Your excitement",
         "Your confidence",
         "Your softness",
-        "Your honesty",
         "Your beautiful heart",
-        "Your weirdness",
         "Your little habits",
         "Your compliments",
         "Your attention",
@@ -113,7 +78,6 @@ def reasons():
         "Your stories",
         "Your charm",
         "Your innocence",
-        "Your curiosity",
         "Your creativity",
         "Your enthusiasm",
         "Your stubbornness",
@@ -183,17 +147,85 @@ def reasons():
         "Because you appreciate me",
         "Because you inspire me",
         ]
-    
+        
+        reason_placeholder = st.empty()
         for i, reason in enumerate(reasons, start=1):
-            st.markdown(f"**{i}.** {reason}")
-            time.sleep(0.25)  #
+            reason_placeholder.markdown(
+            f"""
+            <div style="
+                text-align: center;
+                padding: 20px;
+                font-size: 24px;
+                color: #ff4b6e;
+                font-weight: bold;
+            ">
+                💗 Reason #{i} 💗
+                <br><br>
+                {reason}
+            </div>
+            """,
+            unsafe_allow_html=True
+            )
+            
+            time.sleep(0.4)  #
 
         st.markdown("---")
-        
-        st.markdown("<h3 style='text-align: center; color: pink;'>But cutie. ❤️ I don't need 1000 reasons to need you. I just need one—you make my world a little happier by standing by me. 🎉🎂🎁</h3>", unsafe_allow_html=True)
-
+        reason_placeholder.markdown(
+        """
+        <div style="
+            text-align: center;
+            padding: 30px;
+            font-size: 28px;
+            color: #ff4b6e;
+            font-weight: bold;
+        ">
+            💕 And after all 1000 reasons... 💕
+            <br><br>
+            There are probably a million more reasons I could write.
+            <br><br>
+            But if I had to choose just one...
+            <br><br>
+            ❤️ I need you because you're YOU. ❤️
+            <br><br>
+            🥹💗
+        </div>
+        """,
+        unsafe_allow_html=True
+        )
+        st.markdown("<h3 style='text-align: center; color: pink;'>❤️ I don't need 1000 reasons to need you. I just need one—you make my world a little happier by standing by me. 🎉🎂🎁</h3>", unsafe_allow_html=True)
+        st.markdown("<h1 style='text-align: center; color: baby pink;'>As this little birthday card comes to an end, I just want to say one thing—I am truly grateful that someone as wonderful as you exists in my life. ❤️</h1>", unsafe_allow_html=True)
+        st.markdown("<h1 style='text-align: center; color: pink;'>Happy Birthday! 🎂💫You deserve all the happiness in the world. ❤️</h1>", unsafe_allow_html=True)
     
 
+def check_plans():
+    bool2=False
+    check=st.button("Let's Check today plans")
+    if check:
+        bool2=True
+        
+        #Staring the 2nd while loop to check the plans for today
+    while bool2:
+        st.markdown("<h3 style='text-align: center; color: pink;'>Tamluk</h3>", unsafe_allow_html=True)
+        st.write("See you at the temple at 10:00 AM")
+        st.image("https://thumbs.dreamstime.com/b/bargabhima-temple-courtyard-golden-domes-devotees-tamluk-west-bengal-india-medinipur-august-view-historic-398908606.jpg", 
+                 caption="Bargabhima Temple, Tamluk")
+                
+        st.data_editor(
+                data={
+                    "Time": ["08:00 AM",  "10:00 AM"],
+                    "Activity": ["Temple Visit", "Return Home"]
+                },
+                column_config={
+                    "Time": st.column_config.TextColumn("Time"),
+                    "Activity": st.column_config.TextColumn("Activity")
+                },
+                hide_index=True,
+                key="plans"
+            )
+
+        message()
+            
+        bool2=False
 
 
 
@@ -212,6 +244,9 @@ def main():
     #st.write("Now, let's check the plans for today! 🗓️")
     check_plans()
     reasons()
+    # check_plans()
+    
+    
        
         
      
