@@ -20,7 +20,27 @@ def birthday_wish():
                      and have the most wonderful birthday! 🥳🎉💖
                      """)
         bool1=False
+        
+
+def message():
+    st.write("🎉🎂🎁")
+    st.write("""
+             And one last little confession… 🙈❤️
+
+                I honestly **can not wait to see you today!** 🥰
+                I have been waiting for this day, and I have a feeling that seeing you in person is going to be my favorite part of it. 💕
+
+                So please come soon… because this birthday girl has someone very excited to see her. 😏✨
+
+                Now hurry up! I am running out of patience… and I am blaming you for it. 😂❤️
+
+                **Happy Birthday, beautiful! 🎂💖**
+
+                """)
+    st.markdown("<h1 style='text-align: center; color: baby pink;'>As this little birthday card comes to an end, I just want to say one thing—I am truly grateful that someone as wonderful as you exists in my life. ❤️</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: pink;'>Happy Birthday! 🎂💫You deserve all the happiness in the world. ❤️</h1>", unsafe_allow_html=True)
     
+
 def check_plans():
     bool2=False
     check=st.button("Let's Check today plans")
@@ -38,13 +58,13 @@ def check_plans():
                     
         with col2:
             st.markdown("<h3 style='text-align: center; color: pink;'>Haldia</h3>", unsafe_allow_html=True)
-            st.write("After the temple visit, we will go to Haldia")
+            st.write("After the temple visit")
             st.image("https://i.ytimg.com/vi/sioPVFIqyJ0/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGDwgZSgsMA8=&rs=AOn4CLDkOqYYfLCTYvHtCRIZgPI1YBClqQ", 
                      )
         st.data_editor(
                 data={
                     "Time": ["10:00 AM",  "1:00 PM", "02:00 PM", "05:00 PM"],
-                    "Activity": ["Temple Visit",  "Lunch at The Temple", "Going to Haldia", "Return Home"]
+                    "Activity": ["Temple Visit",  "Lunch at The Temple", "Haldia Township", "Return Home"]
                 },
                 column_config={
                     "Time": st.column_config.TextColumn("Time"),
@@ -54,10 +74,12 @@ def check_plans():
                 key="plans"
             )
 
-            
+        message()
             
         bool2=False
+        
  
+
 def main():
     #This is the page cofiguration for the streamlit app
     st.set_page_config(
