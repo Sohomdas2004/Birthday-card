@@ -1,4 +1,5 @@
 import streamlit as st
+import time
 
 def birthday_wish():
     bool1=False
@@ -78,7 +79,124 @@ def check_plans():
             
         bool2=False
         
- 
+def reasons():
+    with st.expander("💗 1000 Reasons I Need You"):
+        reasons = [
+        "Your smile",
+        "Your laugh",
+        "Your beautiful eyes",
+        "Your voice",
+         "Your little reactions",
+        "Your random texts",
+        "Your good-morning messages",
+        "Your good-night messages",
+        "Your hugs",
+        "Your presence",
+        "Your kindness",
+        "Your patience",
+        "Your silly jokes",
+        "Your adorable anger",
+        "Your sleepy voice",
+        "Your excitement",
+        "Your confidence",
+        "Your softness",
+        "Your honesty",
+        "Your beautiful heart",
+        "Your weirdness",
+        "Your little habits",
+        "Your compliments",
+        "Your attention",
+        "Your care",
+        "Your support",
+        "Your encouragement",
+        "Your advice",
+        "Your stories",
+        "Your charm",
+        "Your innocence",
+        "Your curiosity",
+        "Your creativity",
+        "Your enthusiasm",
+        "Your stubbornness",
+        "Your teasing",
+        "Your flirting",
+        "Your voice notes",
+        "Your photos",
+        "Your selfies",
+        'Your "hehe"',
+        'Your "hmm"',
+        'Your "okayyy"',
+        "Your dramatic reactions",
+        "Your tiny complaints",
+        "Your random questions",
+        "Your random thoughts",
+        "Your late-night conversations",
+        "Your morning conversations",
+        "Your funny stories",
+        "Your beautiful smile",
+        "Your adorable laugh",
+        "Your hugs after a bad day",
+        "Your ability to cheer me up",
+        "Your ability to make me smile",
+        "Your ability to calm me down",
+        "Your ability to make ordinary days special",
+        "Your ability to make me blush",
+        "Your ability to surprise me",
+        "Your ability to understand me",
+        "Your ability to annoy me cutely",
+        "Your ability to make me miss you",
+        "Because you make life sweeter",
+        "Because you make me happier",
+        "Because you make me laugh",
+        "Because you make me feel special",
+        "Because you make me feel understood",
+        "Because you make me feel appreciated",
+        "Because you make me feel lucky",
+        "Because you make me feel loved",
+        "Because you make me feel safe",
+        "Because you're adorable",
+        "Because you're precious",
+        "Because you're irreplaceable",
+        "Because you're unforgettable",
+        "Because you're one of a kind",
+        "Because you're my favorite person",
+        "Because you're my favorite notification",
+        "Because you're my favorite distraction",
+        "Because you're my favorite conversation",
+        "Because you're my favorite thought",
+        "Because you're my favorite smile",
+        "Because you're my favorite reason to smile",
+        "Because you're my favorite goodnight",
+        'Because you ask "what are you doing?"',
+        "Because you're my favorite person to annoy",
+        "Because you're my favorite person to tease",
+        "Because you're my favorite person to miss",
+        "Because you're simply you",
+        "Because you make me feel complete",
+        "Because you bring peace to my chaos",
+        "Because you make silence comfortable",
+        "Because you make conversations endless",
+        "Because you understand my weird side",
+        "Because you accept my flaws",
+        "Because you know how to make me laugh",
+        "Because you know when I need comfort",
+        "Because you respect me",
+        "Because you appreciate me",
+        "Because you inspire me",
+        ]
+    
+        for i, reason in enumerate(reasons, start=1):
+            st.markdown(f"**{i}.** {reason}")
+            time.sleep(0.25)  #
+
+        st.markdown("---")
+        
+        st.markdown("<h3 style='text-align: center; color: pink;'>Heyy cutie. ❤️ I don't need 1000 reasons to need you. I just need one—you make my world a little happier by standing by me. 🎉🎂🎁</h3>", unsafe_allow_html=True)
+
+    
+
+
+
+
 
 def main():
     #This is the page cofiguration for the streamlit app
@@ -93,6 +211,7 @@ def main():
     birthday_wish()
     #st.write("Now, let's check the plans for today! 🗓️")
     check_plans()
+    reasons()
        
         
      
